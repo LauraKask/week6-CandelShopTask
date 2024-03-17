@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Hubballi", sans-serif;
+    line-height: 2;
+}
+
+.container{
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.336), rgba(0, 0, 0, 0.137)) , url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.intro-image__text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn {
+    background-color: #77b95dbd;
+    border: 1px solid #93e42a;
+    color: #f5f1ee;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgba(47, 68, 61, 0.63);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.btn:active{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.intro-text {
+    background-color: #547c1f;
+    color: #f5f1ee;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    padding: 0 15rem;  
+    clip-path: polygon(0% 15%, 0 0, 51% 9%, 51% 9%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 100% 86%, 54% 100%, 33% 94%, 0% 85%);
+}
+
+.intro-text__textbox h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px white, 0 0 5px pink;
+    margin-bottom: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(50px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-image{
+    background-attachment: fixed;
+    background-image: url("../img/img8.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem; 
+}
+
+.packaging-text {
+background-color: #6e4516;
+color: #f5f1ee;
+display:flex;
+align-items: center;
+justify-content: center;
+height: 350px;
+margin-top: -5rem;
+margin-bottom: -5rem;
+padding: 0 15rem;  
+text-shadow: 0 0 3px white, 0 0 5px pink;
+clip-path: polygon(0% 15%, 0 0, 51% 9%, 51% 9%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 100% 86%, 54% 100%, 33% 94%, 0% 85%);
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-50px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.packaging_text__textbox h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-50px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tutorials-image{
+    background-attachment: fixed;
+    background-image: url("../img/img9.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.footer{
+    color: rgb(45, 126, 34);
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    height: 200px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;  
+}
+
+.footer ul li a{
+    color: rgb(45, 126, 34);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover{
+    color: rgb(120, 161, 24);
+    transform: scale(1.3);
+}
